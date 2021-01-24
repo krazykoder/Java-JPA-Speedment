@@ -1,0 +1,159 @@
+{
+  "config" : {
+    "speedmentVersion" : "Speedment:3.2.6",
+    "nameProtected" : false,
+    "expanded" : true,
+    "appId" : "d37dfe5a-b9a7-44ca-8b22-097136d286ca",
+    "companyName" : "company",
+    "name" : "userdb",
+    "packageLocation" : "src/main/java/",
+    "id" : "userdb",
+    "dbmses" : [
+      {
+        "expanded" : true,
+        "port" : 3306,
+        "schemas" : [
+          {
+            "tables" : [
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "email_UNIQUE",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "email",
+                        "id" : "email",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "email_UNIQUE",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "username_UNIQUE",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "username",
+                        "id" : "username",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "username_UNIQUE",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "username",
+                    "id" : "username",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "firstName",
+                    "id" : "firstName",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "lastName",
+                    "id" : "lastName",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "email",
+                    "id" : "email",
+                    "ordinalPosition" : 5,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "password",
+                    "id" : "password",
+                    "ordinalPosition" : 6,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "user",
+                "id" : "user",
+                "enabled" : true
+              }
+            ],
+            "expanded" : true,
+            "name" : "userdb",
+            "id" : "userdb",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "MySQL",
+        "ipAddress" : "127.0.0.1",
+        "name" : "userdb",
+        "id" : "userdb",
+        "enabled" : true,
+        "username" : "root"
+      }
+    ],
+    "enabled" : true
+  }
+}
