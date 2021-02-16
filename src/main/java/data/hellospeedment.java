@@ -55,7 +55,7 @@ public class hellospeedment {
 //		The term CRUD is a short for Create, Read, Update and Delete. Speedment supports all these operations via table Manager objects and more according to the following table:
 //		Operation 	Direct Method 	Functional Reference 	Effect
 //		Create 	persist(entity) 	persister() 	Creates a new row in the database table with data from the given entity
-//		Read 	stream() 	  	Returns a Stream over all the rows in the database table
+//		Read 						stream() 	  	Returns a Stream over all the rows in the database table
 //		Update 	update(entity) 	updater() 	Updates an existing row in the database from the given entity based on primary key(s)
 //		Delete 	remove(entity) 	remover() 	Removes the row in the database that has the same primary key(s) as the given entity
 //		Merge 	merge(entity) 	merger() 	If the row does not exists; Creates the row, otherwise Updates the row in the database that has the same primary key(s) as the given entity
